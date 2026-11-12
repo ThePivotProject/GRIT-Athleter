@@ -484,7 +484,7 @@ h1, h2, h3, .display {
 <link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0F0F0F"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="The GRIT"><link rel="apple-touch-icon" href="icon-192.png"><style>
 .grit-bg{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:url('background.jpg');background-size:cover;background-position:center top;background-repeat:no-repeat;opacity:0.15;}
 </style>
-<meta name="grit-version" content="2026-11-11-v19">
+<meta name="grit-version" content="2026-11-11-v20">
 <meta property="og:type" content="website">
 <meta property="og:title" content="GRIT">
 <meta property="og:description" content="">
@@ -534,6 +534,7 @@ h3{font-size:26px !important;}
 .grit-profile-photo{width:100% !important;max-width:220px !important;margin:0 auto !important;}
 }
 </style>
+<style>
 .grit-mirror{position:relative;overflow:hidden;}
 .grit-mirror-tiles{position:absolute;inset:0;pointer-events:none;
 background-image:linear-gradient(rgba(255,255,255,0.09) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.09) 1px,transparent 1px);
@@ -543,6 +544,7 @@ background:linear-gradient(115deg,rgba(255,255,255,0.16) 0%,rgba(255,255,255,0.0
 .grit-wall-card{background:#101010;border:1px solid rgba(255,255,255,0.12);padding:14px;text-align:left;}
 .grit-athlete-card{background:#101010;border:1px solid rgba(255,255,255,0.12);padding:10px;text-align:center;cursor:pointer;}
 .grit-athlete-card.selected{border-color:#FF4D00;}
+</style>
 </head>
 <body>
   <div id="root"><div id="grit-loading" style="min-height:100vh;background:#0F0F0F;color:#EDEBE6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-family:system-ui,sans-serif;text-align:center;padding:24px;"><div style="font-size:32px;font-weight:800;letter-spacing:2px;">GRIT</div><div style="font-size:14px;color:#B4B1AA;">Loading…</div><div id="grit-error" style="font-size:13px;color:#FF6B6B;max-width:520px;line-height:1.5;"></div></div></div><script>window.addEventListener("error",function(e){var el=document.getElementById("grit-error");if(el){el.textContent="Could not load: "+(e&&e.message?e.message:"script error")+". Try hard-refreshing this page.";}});</script>
