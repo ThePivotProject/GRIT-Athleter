@@ -49,3 +49,5 @@ drop policy if exists "grit public read" on public.grit_athletes;
 drop policy if exists "grit public write" on public.grit_athletes;
 create policy "grit public read" on public.grit_athletes for select using (true);
 create policy "grit public write" on public.grit_athletes for all using (true) with check (true);
+
+alter table public.grit_athletes add column if not exists homework text default '';
