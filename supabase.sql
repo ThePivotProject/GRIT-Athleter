@@ -19,6 +19,7 @@ create table if not exists public.grit_athletes (
   grateful text default '',
   motto text default '',
   mindset text default '',
+  homework text default '',
   remember text default '',
   photo text default '',
   updated_at timestamptz default now()
@@ -39,6 +40,7 @@ alter table public.grit_athletes add column if not exists "favWhy" text default 
 alter table public.grit_athletes add column if not exists grateful text default '';
 alter table public.grit_athletes add column if not exists motto text default '';
 alter table public.grit_athletes add column if not exists mindset text default '';
+alter table public.grit_athletes add column if not exists homework text default '';
 alter table public.grit_athletes add column if not exists remember text default '';
 alter table public.grit_athletes add column if not exists photo text default '';
 alter table public.grit_athletes add column if not exists updated_at timestamptz default now();

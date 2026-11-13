@@ -8,7 +8,7 @@ self.addEventListener('fetch', (e) => {
     return;
   }
   // Cache-first for icons / background / manifest
-  e.respondWith(caches.open('grit-v3').then(async (cache) => {
+  e.respondWith(caches.open('grit-v6').then(async (cache) => {
     const hit = await cache.match(e.request);
     if (hit) return hit;
     try { const res = await fetch(e.request); if (res.ok) cache.put(e.request, res.clone()); return res; }
